@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Storage </title>
+    <link rel="stylesheet" href="../css/storage.css">
+
+</head>
+
+<body>
+    <h2> ADD Cart </h2>
+    <p>Insert items and quantity for your shopping cart. </p>
+    <form name=ShoppingList>
+
+        <div id="main">
+            <table>
+                <tr>
+
+                    <td><b>Item:</b><input type=text name=name></td>
+                    <td><b>Quantity:</b><input type=text name=data></td>
+
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type=button value="Save" onclick="SaveItem()">
+                        <input type=button value="Update" onclick="ModifyItem()">
+                        <input type=button value="Delete" onclick="RemoveItem()">
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+        <div id="items_table">
+            <h3> Item List</h3>
+            <table id=list></table>
+            <p>
+                <label><input type=button value="Clear" onclick="ClearAll()">
+					<i>  Delete all items</i></label>
+            </p>
+        </div>
+    </form>
+</body>
+
+</html>
